@@ -1,0 +1,2597 @@
+{
+  "origin": "http://127.0.0.1:5173",
+  "engine": "chromium",
+  "createdAt": "2026-10-24T13:51:59.267Z",
+  "openingHand": [
+    "3Страж калитки",
+    "2Срочный набор",
+    "4Бригадир на подхвате",
+    "2Повышение без зарплаты",
+    "0Счастливый жетон",
+    "6Дракон бухгалтерии"
+  ],
+  "count": 6,
+  "inspectedIndex": 4,
+  "inspectedLabel": "Счастливый жетон",
+  "logBeforeHover": "Ваш ходПротивник: Оруженосец на полставкиХод противника",
+  "logAfterHover": "Ваш ходПротивник: Оруженосец на полставкиХод противника",
+  "steps": [
+    {
+      "name": "art",
+      "point": {
+        "x": 904.659970745961,
+        "y": 562.1408464686813
+      },
+      "startedAt": 1792849892314,
+      "endedAt": 1792849894318,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "name",
+      "point": {
+        "x": 905.2003261594701,
+        "y": 626.8762040793532
+      },
+      "startedAt": 1792849894319,
+      "endedAt": 1792849896324,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "description",
+      "point": {
+        "x": 905.0930345704876,
+        "y": 662.5721459551706
+      },
+      "startedAt": 1792849896325,
+      "endedAt": 1792849898325,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "cost",
+      "point": {
+        "x": 840.9553285719484,
+        "y": 515.9501923678076
+      },
+      "startedAt": 1792849898326,
+      "endedAt": 1792849900337,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "attack",
+      "point": {
+        "x": 844.8559642393132,
+        "y": 710.260397815843
+      },
+      "startedAt": 1792849900339,
+      "endedAt": 1792849902341,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "health",
+      "point": {
+        "x": 967.1081794726426,
+        "y": 710.260397815843
+      },
+      "startedAt": 1792849902342,
+      "endedAt": 1792849904346,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "frame",
+      "point": {
+        "x": 977.3711781736519,
+        "y": 597.9064169908602
+      },
+      "startedAt": 1792849904349,
+      "endedAt": 1792849906352,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    }
+  ],
+  "dom": {
+    "changes": [
+      {
+        "time": 1792849891520,
+        "label": "Счастливый жетон"
+      },
+      {
+        "time": 1792849906363,
+        "label": ""
+      }
+    ],
+    "contextEvents": [],
+    "currentLabel": "",
+    "startedAt": 1792849881252
+  },
+  "pixelResults": [
+    {
+      "name": "frame-0",
+      "time": 1792849881879,
+      "darkFraction": 0,
+      "meanBrightness": 37.70225694444188
+    },
+    {
+      "name": "frame-1",
+      "time": 1792849881942,
+      "darkFraction": 0.0004650297619047619,
+      "meanBrightness": 90.127728174603
+    },
+    {
+      "name": "frame-2",
+      "time": 1792849882008,
+      "darkFraction": 0.0005580357142857143,
+      "meanBrightness": 90.0872085813492
+    },
+    {
+      "name": "frame-3",
+      "time": 1792849882158,
+      "darkFraction": 0,
+      "meanBrightness": 54.29954117063482
+    },
+    {
+      "name": "frame-4",
+      "time": 1792849882238,
+      "darkFraction": 0,
+      "meanBrightness": 54.29889012896814
+    },
+    {
+      "name": "frame-5",
+      "time": 1792849882310,
+      "darkFraction": 0,
+      "meanBrightness": 54.29765004960307
+    },
+    {
+      "name": "frame-6",
+      "time": 1792849882385,
+      "darkFraction": 0,
+      "meanBrightness": 53.37980530753963
+    },
+    {
+      "name": "frame-7",
+      "time": 1792849882450,
+      "darkFraction": 0,
+      "meanBrightness": 53.37729414682533
+    },
+    {
+      "name": "frame-8",
+      "time": 1792849882510,
+      "darkFraction": 0,
+      "meanBrightness": 53.37456597222215
+    },
+    {
+      "name": "frame-9",
+      "time": 1792849882576,
+      "darkFraction": 0,
+      "meanBrightness": 53.37165178571421
+    },
+    {
+      "name": "frame-10",
+      "time": 1792849882660,
+      "darkFraction": 0,
+      "meanBrightness": 53.3679625496031
+    },
+    {
+      "name": "frame-11",
+      "time": 1792849882726,
+      "darkFraction": 0,
+      "meanBrightness": 53.365389384920555
+    },
+    {
+      "name": "frame-12",
+      "time": 1792849882809,
+      "darkFraction": 0,
+      "meanBrightness": 53.36281622023802
+    },
+    {
+      "name": "frame-13",
+      "time": 1792849882877,
+      "darkFraction": 0,
+      "meanBrightness": 53.36142113095231
+    },
+    {
+      "name": "frame-14",
+      "time": 1792849882942,
+      "darkFraction": 0,
+      "meanBrightness": 53.360274057539606
+    },
+    {
+      "name": "frame-15",
+      "time": 1792849883081,
+      "darkFraction": 0,
+      "meanBrightness": 53.35996403769834
+    },
+    {
+      "name": "frame-16",
+      "time": 1792849883165,
+      "darkFraction": 0,
+      "meanBrightness": 53.35897197420627
+    },
+    {
+      "name": "frame-17",
+      "time": 1792849883250,
+      "darkFraction": 0,
+      "meanBrightness": 30.189050099206394
+    },
+    {
+      "name": "frame-18",
+      "time": 1792849883310,
+      "darkFraction": 0,
+      "meanBrightness": 30.181020585317476
+    },
+    {
+      "name": "frame-19",
+      "time": 1792849883397,
+      "darkFraction": 0,
+      "meanBrightness": 40.08553447420482
+    },
+    {
+      "name": "frame-20",
+      "time": 1792849883481,
+      "darkFraction": 0,
+      "meanBrightness": 54.38349454365076
+    },
+    {
+      "name": "frame-21",
+      "time": 1792849883544,
+      "darkFraction": 0,
+      "meanBrightness": 69.6546068948411
+    },
+    {
+      "name": "frame-22",
+      "time": 1792849883604,
+      "darkFraction": 0,
+      "meanBrightness": 78.19673859126935
+    },
+    {
+      "name": "frame-23",
+      "time": 1792849883669,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.84195188492066
+    },
+    {
+      "name": "frame-24",
+      "time": 1792849883737,
+      "darkFraction": 0.00009300595238095238,
+      "meanBrightness": 79.92996651785701
+    },
+    {
+      "name": "frame-25",
+      "time": 1792849883819,
+      "darkFraction": 0.00009300595238095238,
+      "meanBrightness": 79.99513268849158
+    },
+    {
+      "name": "frame-26",
+      "time": 1792849883886,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.99082341269789
+    },
+    {
+      "name": "frame-27",
+      "time": 1792849883948,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.97637648809526
+    },
+    {
+      "name": "frame-28",
+      "time": 1792849884019,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96642485119044
+    },
+    {
+      "name": "frame-29",
+      "time": 1792849884086,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96186755952345
+    },
+    {
+      "name": "frame-30",
+      "time": 1792849884153,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96189856150758
+    },
+    {
+      "name": "frame-31",
+      "time": 1792849884222,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96189856150758
+    },
+    {
+      "name": "frame-32",
+      "time": 1792849884291,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96189856150758
+    },
+    {
+      "name": "frame-33",
+      "time": 1792849884356,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96189856150758
+    },
+    {
+      "name": "frame-34",
+      "time": 1792849884420,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96189856150758
+    },
+    {
+      "name": "frame-35",
+      "time": 1792849884486,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96189856150758
+    },
+    {
+      "name": "frame-36",
+      "time": 1792849884553,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96189856150758
+    },
+    {
+      "name": "frame-37",
+      "time": 1792849884614,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96189856150758
+    },
+    {
+      "name": "frame-38",
+      "time": 1792849884677,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.94605654761887
+    },
+    {
+      "name": "frame-39",
+      "time": 1792849884744,
+      "darkFraction": 0.00009300595238095238,
+      "meanBrightness": 79.83463541666626
+    },
+    {
+      "name": "frame-40",
+      "time": 1792849884837,
+      "darkFraction": 0.00009300595238095238,
+      "meanBrightness": 79.67813740079309
+    },
+    {
+      "name": "frame-41",
+      "time": 1792849884902,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.40026661706347
+    },
+    {
+      "name": "frame-42",
+      "time": 1792849884978,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.36315724206322
+    },
+    {
+      "name": "frame-43",
+      "time": 1792849885047,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.47606646825368
+    },
+    {
+      "name": "frame-44",
+      "time": 1792849885120,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.63113839285668
+    },
+    {
+      "name": "frame-45",
+      "time": 1792849885195,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.77560763888853
+    },
+    {
+      "name": "frame-46",
+      "time": 1792849885270,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.88287450396815
+    },
+    {
+      "name": "frame-47",
+      "time": 1792849885353,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.96595982142823
+    },
+    {
+      "name": "frame-48",
+      "time": 1792849885428,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.94949776785678
+    },
+    {
+      "name": "frame-49",
+      "time": 1792849885503,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.94949776785678
+    },
+    {
+      "name": "frame-50",
+      "time": 1792849885579,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.94949776785678
+    },
+    {
+      "name": "frame-51",
+      "time": 1792849885662,
+      "darkFraction": 0.00018601190476190475,
+      "meanBrightness": 79.94949776785678
+    },
+    {
+      "name": "frame-52",
+      "time": 1792849885737,
+      "darkFraction": 0,
+      "meanBrightness": 50.964192708332284
+    },
+    {
+      "name": "frame-53",
+      "time": 1792849885811,
+      "darkFraction": 0,
+      "meanBrightness": 50.964192708332284
+    },
+    {
+      "name": "frame-54",
+      "time": 1792849885886,
+      "darkFraction": 0,
+      "meanBrightness": 50.964192708332284
+    },
+    {
+      "name": "frame-55",
+      "time": 1792849885974,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-56",
+      "time": 1792849886045,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-57",
+      "time": 1792849886120,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-58",
+      "time": 1792849886196,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-59",
+      "time": 1792849886279,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-60",
+      "time": 1792849886354,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-61",
+      "time": 1792849886429,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-62",
+      "time": 1792849886503,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-63",
+      "time": 1792849886586,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-64",
+      "time": 1792849886662,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-65",
+      "time": 1792849886737,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-66",
+      "time": 1792849886820,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-67",
+      "time": 1792849886916,
+      "darkFraction": 0,
+      "meanBrightness": 50.964254712300544
+    },
+    {
+      "name": "frame-68",
+      "time": 1792849886986,
+      "darkFraction": 0,
+      "meanBrightness": 50.964161706348165
+    },
+    {
+      "name": "frame-69",
+      "time": 1792849887062,
+      "darkFraction": 0,
+      "meanBrightness": 50.964161706348165
+    },
+    {
+      "name": "frame-70",
+      "time": 1792849887145,
+      "darkFraction": 0,
+      "meanBrightness": 50.964161706348165
+    },
+    {
+      "name": "frame-71",
+      "time": 1792849887220,
+      "darkFraction": 0,
+      "meanBrightness": 50.964161706348165
+    },
+    {
+      "name": "frame-72",
+      "time": 1792849887286,
+      "darkFraction": 0,
+      "meanBrightness": 50.964161706348165
+    },
+    {
+      "name": "frame-73",
+      "time": 1792849887362,
+      "darkFraction": 0,
+      "meanBrightness": 50.96413070436403
+    },
+    {
+      "name": "frame-74",
+      "time": 1792849887445,
+      "darkFraction": 0,
+      "meanBrightness": 50.96413070436403
+    },
+    {
+      "name": "frame-75",
+      "time": 1792849887521,
+      "darkFraction": 0,
+      "meanBrightness": 50.96413070436403
+    },
+    {
+      "name": "frame-76",
+      "time": 1792849887603,
+      "darkFraction": 0,
+      "meanBrightness": 50.96413070436403
+    },
+    {
+      "name": "frame-77",
+      "time": 1792849887670,
+      "darkFraction": 0,
+      "meanBrightness": 50.96413070436403
+    },
+    {
+      "name": "frame-78",
+      "time": 1792849887744,
+      "darkFraction": 0,
+      "meanBrightness": 50.96413070436403
+    },
+    {
+      "name": "frame-79",
+      "time": 1792849887812,
+      "darkFraction": 0,
+      "meanBrightness": 50.96413070436403
+    },
+    {
+      "name": "frame-80",
+      "time": 1792849887886,
+      "darkFraction": 0,
+      "meanBrightness": 50.96413070436403
+    },
+    {
+      "name": "frame-81",
+      "time": 1792849887952,
+      "darkFraction": 0,
+      "meanBrightness": 50.89226810515769
+    },
+    {
+      "name": "frame-82",
+      "time": 1792849888029,
+      "darkFraction": 0,
+      "meanBrightness": 50.362506200395565
+    },
+    {
+      "name": "frame-83",
+      "time": 1792849888104,
+      "darkFraction": 0,
+      "meanBrightness": 50.509827628967024
+    },
+    {
+      "name": "frame-84",
+      "time": 1792849888187,
+      "darkFraction": 0,
+      "meanBrightness": 50.89769345237995
+    },
+    {
+      "name": "frame-85",
+      "time": 1792849888262,
+      "darkFraction": 0,
+      "meanBrightness": 51.01298983134812
+    },
+    {
+      "name": "frame-86",
+      "time": 1792849888329,
+      "darkFraction": 0,
+      "meanBrightness": 50.963169642856116
+    },
+    {
+      "name": "frame-87",
+      "time": 1792849888404,
+      "darkFraction": 0,
+      "meanBrightness": 50.94543650793547
+    },
+    {
+      "name": "frame-88",
+      "time": 1792849888486,
+      "darkFraction": 0,
+      "meanBrightness": 50.947482638887855
+    },
+    {
+      "name": "frame-89",
+      "time": 1792849888562,
+      "darkFraction": 0,
+      "meanBrightness": 50.945653521824354
+    },
+    {
+      "name": "frame-90",
+      "time": 1792849888645,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-91",
+      "time": 1792849888720,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-92",
+      "time": 1792849888780,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-93",
+      "time": 1792849888865,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-94",
+      "time": 1792849888937,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-95",
+      "time": 1792849889020,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-96",
+      "time": 1792849889096,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-97",
+      "time": 1792849889162,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-98",
+      "time": 1792849889237,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-99",
+      "time": 1792849889319,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-100",
+      "time": 1792849889379,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-101",
+      "time": 1792849889454,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-102",
+      "time": 1792849889538,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-103",
+      "time": 1792849889604,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-104",
+      "time": 1792849889665,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-105",
+      "time": 1792849889745,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-106",
+      "time": 1792849889820,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-107",
+      "time": 1792849889886,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-108",
+      "time": 1792849889962,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-109",
+      "time": 1792849890045,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-110",
+      "time": 1792849890119,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-111",
+      "time": 1792849890179,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-112",
+      "time": 1792849890245,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-113",
+      "time": 1792849890320,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-114",
+      "time": 1792849890403,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-115",
+      "time": 1792849890478,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-116",
+      "time": 1792849890561,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-117",
+      "time": 1792849890637,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-118",
+      "time": 1792849890803,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-119",
+      "time": 1792849890881,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-120",
+      "time": 1792849890954,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-121",
+      "time": 1792849891028,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-122",
+      "time": 1792849891104,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-123",
+      "time": 1792849891187,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-124",
+      "time": 1792849891263,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-125",
+      "time": 1792849891337,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-126",
+      "time": 1792849891411,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-127",
+      "time": 1792849891508,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-128",
+      "time": 1792849891579,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-129",
+      "time": 1792849891653,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-130",
+      "time": 1792849891721,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-131",
+      "time": 1792849891796,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-132",
+      "time": 1792849891870,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-133",
+      "time": 1792849891932,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-134",
+      "time": 1792849891996,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-135",
+      "time": 1792849892069,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-136",
+      "time": 1792849892144,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-137",
+      "time": 1792849892218,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-138",
+      "time": 1792849892287,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-139",
+      "time": 1792849892347,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-140",
+      "time": 1792849892420,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-141",
+      "time": 1792849892487,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-142",
+      "time": 1792849892624,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-143",
+      "time": 1792849892692,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-144",
+      "time": 1792849892767,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-145",
+      "time": 1792849892842,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-146",
+      "time": 1792849892908,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-147",
+      "time": 1792849892985,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-148",
+      "time": 1792849893060,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-149",
+      "time": 1792849893125,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-150",
+      "time": 1792849893200,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-151",
+      "time": 1792849893275,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-152",
+      "time": 1792849893350,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-153",
+      "time": 1792849893417,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-154",
+      "time": 1792849893493,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-155",
+      "time": 1792849893567,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-156",
+      "time": 1792849893647,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-157",
+      "time": 1792849893723,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-158",
+      "time": 1792849893801,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-159",
+      "time": 1792849893873,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-160",
+      "time": 1792849893934,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-161",
+      "time": 1792849894009,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-162",
+      "time": 1792849894083,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-163",
+      "time": 1792849894159,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-164",
+      "time": 1792849894342,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-165",
+      "time": 1792849894417,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-166",
+      "time": 1792849894492,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-167",
+      "time": 1792849894567,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-168",
+      "time": 1792849894747,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-169",
+      "time": 1792849894808,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-170",
+      "time": 1792849894885,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-171",
+      "time": 1792849894951,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-172",
+      "time": 1792849895013,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-173",
+      "time": 1792849895088,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-174",
+      "time": 1792849895153,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-175",
+      "time": 1792849895228,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-176",
+      "time": 1792849895296,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-177",
+      "time": 1792849895366,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-178",
+      "time": 1792849895431,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-179",
+      "time": 1792849895498,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-180",
+      "time": 1792849895567,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-181",
+      "time": 1792849895639,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-182",
+      "time": 1792849895699,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-183",
+      "time": 1792849895767,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-184",
+      "time": 1792849895828,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-185",
+      "time": 1792849895900,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-186",
+      "time": 1792849895964,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-187",
+      "time": 1792849896026,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-188",
+      "time": 1792849896101,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-189",
+      "time": 1792849896167,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-190",
+      "time": 1792849896330,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-191",
+      "time": 1792849896393,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-192",
+      "time": 1792849896459,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-193",
+      "time": 1792849896520,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-194",
+      "time": 1792849896591,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-195",
+      "time": 1792849896733,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-196",
+      "time": 1792849896807,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-197",
+      "time": 1792849896867,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-198",
+      "time": 1792849896932,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-199",
+      "time": 1792849896993,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-200",
+      "time": 1792849897059,
+      "darkFraction": 0,
+      "meanBrightness": 50.94407242063388
+    },
+    {
+      "name": "frame-201",
+      "time": 1792849897131,
+      "darkFraction": 0,
+      "meanBrightness": 50.94404141864976
+    },
+    {
+      "name": "frame-202",
+      "time": 1792849897192,
+      "darkFraction": 0,
+      "meanBrightness": 50.94404141864976
+    },
+    {
+      "name": "frame-203",
+      "time": 1792849897259,
+      "darkFraction": 0,
+      "meanBrightness": 50.94404141864976
+    },
+    {
+      "name": "frame-204",
+      "time": 1792849897334,
+      "darkFraction": 0,
+      "meanBrightness": 50.94404141864976
+    },
+    {
+      "name": "frame-205",
+      "time": 1792849897408,
+      "darkFraction": 0,
+      "meanBrightness": 50.94404141864976
+    },
+    {
+      "name": "frame-206",
+      "time": 1792849897484,
+      "darkFraction": 0,
+      "meanBrightness": 50.94404141864976
+    },
+    {
+      "name": "frame-207",
+      "time": 1792849897551,
+      "darkFraction": 0,
+      "meanBrightness": 50.94404141864976
+    },
+    {
+      "name": "frame-208",
+      "time": 1792849897624,
+      "darkFraction": 0,
+      "meanBrightness": 50.94404141864976
+    },
+    {
+      "name": "frame-209",
+      "time": 1792849897684,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-210",
+      "time": 1792849897750,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-211",
+      "time": 1792849897824,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-212",
+      "time": 1792849897885,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-213",
+      "time": 1792849897951,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-214",
+      "time": 1792849898026,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-215",
+      "time": 1792849898100,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-216",
+      "time": 1792849898167,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-217",
+      "time": 1792849898329,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-218",
+      "time": 1792849898397,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-219",
+      "time": 1792849898459,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-220",
+      "time": 1792849898525,
+      "darkFraction": 0,
+      "meanBrightness": 50.94401041666562
+    },
+    {
+      "name": "frame-221",
+      "time": 1792849898600,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-222",
+      "time": 1792849898765,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-223",
+      "time": 1792849898843,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-224",
+      "time": 1792849898909,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-225",
+      "time": 1792849898984,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-226",
+      "time": 1792849899061,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-227",
+      "time": 1792849899135,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-228",
+      "time": 1792849899200,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-229",
+      "time": 1792849899275,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-230",
+      "time": 1792849899350,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-231",
+      "time": 1792849899426,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-232",
+      "time": 1792849899494,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-233",
+      "time": 1792849899554,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-234",
+      "time": 1792849899625,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-235",
+      "time": 1792849899692,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-236",
+      "time": 1792849899768,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-237",
+      "time": 1792849899842,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-238",
+      "time": 1792849899902,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-239",
+      "time": 1792849899968,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-240",
+      "time": 1792849900041,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-241",
+      "time": 1792849900102,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-242",
+      "time": 1792849900167,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-243",
+      "time": 1792849900229,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-244",
+      "time": 1792849900373,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-245",
+      "time": 1792849900443,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-246",
+      "time": 1792849900517,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-247",
+      "time": 1792849900592,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-248",
+      "time": 1792849900790,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-249",
+      "time": 1792849900851,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-250",
+      "time": 1792849900917,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-251",
+      "time": 1792849900979,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-252",
+      "time": 1792849901051,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-253",
+      "time": 1792849901117,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-254",
+      "time": 1792849901191,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-255",
+      "time": 1792849901267,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-256",
+      "time": 1792849901334,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-257",
+      "time": 1792849901409,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-258",
+      "time": 1792849901483,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-259",
+      "time": 1792849901559,
+      "darkFraction": 0,
+      "meanBrightness": 50.943855406744994
+    },
+    {
+      "name": "frame-260",
+      "time": 1792849901626,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-261",
+      "time": 1792849901702,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-262",
+      "time": 1792849901776,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-263",
+      "time": 1792849901842,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-264",
+      "time": 1792849901916,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-265",
+      "time": 1792849901976,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-266",
+      "time": 1792849902041,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-267",
+      "time": 1792849902117,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-268",
+      "time": 1792849902193,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-269",
+      "time": 1792849902360,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-270",
+      "time": 1792849902425,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-271",
+      "time": 1792849902501,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-272",
+      "time": 1792849902576,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-273",
+      "time": 1792849902775,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-274",
+      "time": 1792849902847,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-275",
+      "time": 1792849902917,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-276",
+      "time": 1792849902992,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-277",
+      "time": 1792849903069,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-278",
+      "time": 1792849903136,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-279",
+      "time": 1792849903209,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-280",
+      "time": 1792849903283,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-281",
+      "time": 1792849903359,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-282",
+      "time": 1792849903423,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-283",
+      "time": 1792849903483,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-284",
+      "time": 1792849903559,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-285",
+      "time": 1792849903626,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-286",
+      "time": 1792849903702,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-287",
+      "time": 1792849903775,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-288",
+      "time": 1792849903841,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-289",
+      "time": 1792849903901,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-290",
+      "time": 1792849903976,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-291",
+      "time": 1792849904042,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-292",
+      "time": 1792849904117,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-293",
+      "time": 1792849904194,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-294",
+      "time": 1792849904361,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-295",
+      "time": 1792849904427,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-296",
+      "time": 1792849904500,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-297",
+      "time": 1792849904573,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-298",
+      "time": 1792849904642,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-299",
+      "time": 1792849904759,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-300",
+      "time": 1792849904824,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-301",
+      "time": 1792849904898,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-302",
+      "time": 1792849904959,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-303",
+      "time": 1792849905025,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-304",
+      "time": 1792849905086,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-305",
+      "time": 1792849905159,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-306",
+      "time": 1792849905226,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-307",
+      "time": 1792849905299,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-308",
+      "time": 1792849905372,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-309",
+      "time": 1792849905451,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-310",
+      "time": 1792849905517,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-311",
+      "time": 1792849905592,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-312",
+      "time": 1792849905667,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-313",
+      "time": 1792849905734,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-314",
+      "time": 1792849905809,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-315",
+      "time": 1792849905884,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-316",
+      "time": 1792849905959,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-317",
+      "time": 1792849906025,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-318",
+      "time": 1792849906098,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-319",
+      "time": 1792849906158,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-320",
+      "time": 1792849906225,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-321",
+      "time": 1792849906358,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-322",
+      "time": 1792849906429,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-323",
+      "time": 1792849906504,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-324",
+      "time": 1792849906578,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-325",
+      "time": 1792849906646,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-326",
+      "time": 1792849906729,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-327",
+      "time": 1792849906811,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-328",
+      "time": 1792849906885,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-329",
+      "time": 1792849906945,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-330",
+      "time": 1792849907020,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-331",
+      "time": 1792849907096,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-332",
+      "time": 1792849907158,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-333",
+      "time": 1792849907228,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-334",
+      "time": 1792849907304,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-335",
+      "time": 1792849907378,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-336",
+      "time": 1792849907454,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-337",
+      "time": 1792849907529,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-338",
+      "time": 1792849907603,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-339",
+      "time": 1792849907679,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-340",
+      "time": 1792849907753,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-341",
+      "time": 1792849907829,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-342",
+      "time": 1792849907904,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-343",
+      "time": 1792849907979,
+      "darkFraction": 0,
+      "meanBrightness": 50.943886408729114
+    },
+    {
+      "name": "frame-344",
+      "time": 1792849908062,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-345",
+      "time": 1792849908138,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-346",
+      "time": 1792849908211,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-347",
+      "time": 1792849908271,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-348",
+      "time": 1792849908345,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-349",
+      "time": 1792849908428,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-350",
+      "time": 1792849908503,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-351",
+      "time": 1792849908563,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-352",
+      "time": 1792849908629,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-353",
+      "time": 1792849908697,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-354",
+      "time": 1792849908772,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-355",
+      "time": 1792849908854,
+      "darkFraction": 0,
+      "meanBrightness": 51.100167410713276
+    },
+    {
+      "name": "frame-356",
+      "time": 1792849908929,
+      "darkFraction": 0,
+      "meanBrightness": 54.67962549603151
+    },
+    {
+      "name": "frame-357",
+      "time": 1792849909012,
+      "darkFraction": 0,
+      "meanBrightness": 56.184709821428754
+    },
+    {
+      "name": "frame-358",
+      "time": 1792849909087,
+      "darkFraction": 0,
+      "meanBrightness": 51.737010168649896
+    },
+    {
+      "name": "frame-359",
+      "time": 1792849909153,
+      "darkFraction": 0,
+      "meanBrightness": 50.57601686507811
+    },
+    {
+      "name": "frame-360",
+      "time": 1792849909229,
+      "darkFraction": 0,
+      "meanBrightness": 50.60342261904636
+    },
+    {
+      "name": "frame-361",
+      "time": 1792849909311,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-362",
+      "time": 1792849909371,
+      "darkFraction": 0,
+      "meanBrightness": 50.94397941468149
+    },
+    {
+      "name": "frame-363",
+      "time": 1792849909446,
+      "darkFraction": 0,
+      "meanBrightness": 50.954303075395806
+    },
+    {
+      "name": "frame-364",
+      "time": 1792849909511,
+      "darkFraction": 0,
+      "meanBrightness": 50.94683159722122
+    },
+    {
+      "name": "frame-365",
+      "time": 1792849909571,
+      "darkFraction": 0,
+      "meanBrightness": 50.95960441468155
+    },
+    {
+      "name": "frame-366",
+      "time": 1792849909645,
+      "darkFraction": 0,
+      "meanBrightness": 50.98198784722124
+    },
+    {
+      "name": "frame-367",
+      "time": 1792849909712,
+      "darkFraction": 0,
+      "meanBrightness": 50.94611855158629
+    },
+    {
+      "name": "frame-368",
+      "time": 1792849909787,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-369",
+      "time": 1792849909870,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-370",
+      "time": 1792849909946,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-371",
+      "time": 1792849910028,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-372",
+      "time": 1792849910103,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-373",
+      "time": 1792849910171,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-374",
+      "time": 1792849910246,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-375",
+      "time": 1792849910329,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-376",
+      "time": 1792849910403,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-377",
+      "time": 1792849910487,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-378",
+      "time": 1792849910570,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-379",
+      "time": 1792849910654,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-380",
+      "time": 1792849910728,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-381",
+      "time": 1792849910796,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-382",
+      "time": 1792849910871,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-383",
+      "time": 1792849910954,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-384",
+      "time": 1792849911028,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-385",
+      "time": 1792849911112,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-386",
+      "time": 1792849911186,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-387",
+      "time": 1792849911254,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-388",
+      "time": 1792849911329,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-389",
+      "time": 1792849911412,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-390",
+      "time": 1792849911487,
+      "darkFraction": 0,
+      "meanBrightness": 50.943948412697374
+    },
+    {
+      "name": "frame-391",
+      "time": 1792849911571,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-392",
+      "time": 1792849911645,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "frame-393",
+      "time": 1792849911716,
+      "darkFraction": 0,
+      "meanBrightness": 50.94391741071323
+    },
+    {
+      "name": "first-active-hand",
+      "time": 1792849890768,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "settled-first-hand",
+      "time": 1792849891502,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-art-early",
+      "time": 1792849892617,
+      "darkFraction": 0,
+      "meanBrightness": 50.86230526161807
+    },
+    {
+      "name": "hover-art-late",
+      "time": 1792849894318,
+      "darkFraction": 0,
+      "meanBrightness": 50.86230526161807
+    },
+    {
+      "name": "hover-name-early",
+      "time": 1792849894715,
+      "darkFraction": 0,
+      "meanBrightness": 50.86230526161807
+    },
+    {
+      "name": "hover-name-late",
+      "time": 1792849896324,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-description-early",
+      "time": 1792849896726,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-description-late",
+      "time": 1792849898324,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-cost-early",
+      "time": 1792849898727,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-cost-late",
+      "time": 1792849900337,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-attack-early",
+      "time": 1792849900760,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-attack-late",
+      "time": 1792849902341,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-health-early",
+      "time": 1792849902744,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "hover-health-late",
+      "time": 1792849904346,
+      "darkFraction": 0,
+      "meanBrightness": 50.86230526161807
+    },
+    {
+      "name": "hover-frame-early",
+      "time": 1792849904750,
+      "darkFraction": 0,
+      "meanBrightness": 50.86230526161807
+    },
+    {
+      "name": "hover-frame-late",
+      "time": 1792849906352,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    },
+    {
+      "name": "after-first-turn-draw",
+      "time": 1792849911811,
+      "darkFraction": 0,
+      "meanBrightness": 50.86231138546679
+    }
+  ],
+  "blackFrames": [],
+  "errors": [],
+  "failures": []
+}

@@ -7,6 +7,7 @@ import { GameScene } from './scene/GameScene';
 import type { Selection } from './presentation/types';
 import { useGameSession } from './presentation/useGameSession';
 import { useSound } from './audio/useSound';
+import { downloadDiagnostics, recordDiagnostic } from './diagnostics/runtime';
 import { MainMenu } from './ui/MainMenu';
 import { BattleHud, selectedActions } from './ui/BattleHud';
 import { CardPreview } from './ui/CardPreview';
@@ -27,6 +28,7 @@ class SceneBoundary extends Component<{ children: ReactNode; onMenu: () => void;
   state = { failed: false };
   static getDerivedStateFromError() { return { failed: true }; }
   componentDidCatch(error: Error, info: ErrorInfo) {
+    recordDiagnostic('scene.error-boundary', { message: error.message, stack: error.stack, components: info.componentStack });
     console.error('Не удалось открыть игровой стол', error, info.componentStack);
     this.props.onFailure();
   }
@@ -36,7 +38,7 @@ class SceneBoundary extends Component<{ children: ReactNode; onMenu: () => void;
 }
 
 function SceneFailure({ onMenu, unsupported = false }: { onMenu: () => void; unsupported?: boolean }) {
-  return <div className="scene-failure" role="alert"><span className="ornament">✧</span><h2>{unsupported ? 'Стол пока не открылся' : 'Таверна не успела подготовиться'}</h2><p>{unsupported ? 'Для игрового стола нужен браузер с WebGL 2. Включите аппаратное ускорение или откройте игру в современном браузере.' : 'Не удалось загрузить игровой стол. Проверьте соединение и попробуйте снова.'}</p><button className="brass-button" onClick={() => window.location.reload()}>Попробовать снова</button><button className="quiet-button" onClick={onMenu}>К выбору героя</button></div>;
+  return <div className="scene-failure" role="alert"><span className="ornament">✧</span><h2>{unsupported ? 'Стол пока не открылся' : 'Таверна не успела подготовиться'}</h2><p>{unsupported ? 'Для игрового стола нужен браузер с WebGL 2. Включите аппаратное ускорение или откройте игру в современном браузере.' : 'Не удалось загрузить игровой стол. Проверьте соединение и попробуйте снова.'}</p><button className="brass-button" onClick={() => window.location.reload()}>Попробовать снова</button><button className="quiet-button" onClick={onMenu}>К выбору героя</button><button className="quiet-button" onClick={downloadDiagnostics}>Скачать диагностику</button></div>;
 }
 
 function LoadingTable({ onMenu }: { onMenu: () => void }) {
@@ -182,7 +184,7 @@ export default function App() {
       <p className="dialog-subtitle">{HEROES[heroId].name} дождётся вашего возвращения.</p>
       <div className="pause-actions"><button className="brass-button full-width" onClick={() => setOverlay(null)}>Вернуться в партию</button><button className="quiet-button full-width" onClick={() => setOverlay('rules')}>Как играть</button></div>
       <div className="sound-settings"><button className="quiet-button" onClick={sound.toggle}>Звук: {sound.enabled ? 'включён' : 'выключен'}</button><label>Громкость<input type="range" min="0" max="1" step="0.05" value={sound.volume} onChange={(event) => sound.setVolume(Number(event.target.value))} /></label></div>
-      <div className="pause-bottom"><button className="quiet-button" onClick={start}>Начать заново</button><button className="quiet-button" onClick={returnToMenu}>Выбрать героя</button></div>
+      <div className="pause-bottom"><button className="quiet-button" onClick={start}>Начать заново</button><button className="quiet-button" onClick={returnToMenu}>Выбрать героя</button><button className="quiet-button" onClick={downloadDiagnostics}>Скачать диагностику</button></div>
     </Modal>}
     {isNarrow && <NarrowWindowHint inMatch={view !== null} />}
   </>;

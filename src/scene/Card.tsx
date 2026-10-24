@@ -1,11 +1,11 @@
-import { useRef, useState, type MutableRefObject } from 'react';
-import { Text, useTexture } from '@react-three/drei';
+import { useCallback, useEffect, useMemo, useRef, useState, type MutableRefObject } from 'react';
+import { Text } from '@react-three/drei';
 import { useFrame, type ThreeEvent } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { CardDefinition } from '../core/types';
 import type { DragState, DragSource } from './interactions';
 import { prefersReducedMotion } from './motion';
-import { prepareArtTextures } from './textures';
+import { useArtTexture } from './SceneAssets';
 import { RoundedPlate } from './RoundedPlate';
 import { HAND_Y, HAND_Z } from './spatial';
 
@@ -22,7 +22,7 @@ export function StatGem({ value, position, color = '#a73c36', size = .18 }: { va
 }
 
 export function CardFace({ definition, back = false, glowing = false }: { definition?: CardDefinition; back?: boolean; glowing?: boolean }) {
-  const texture = useTexture(back || !definition ? '/assets/card-back.png' : definition.art, prepareArtTextures);
+  const texture = useArtTexture(back || !definition ? '/assets/card-back.png' : definition.art);
   const faction = definition?.faction;
   const frame = faction === 'mage' ? '#79608b' : faction === 'goblin' ? '#98743c' : '#886d4b';
   return <group>
@@ -61,12 +61,27 @@ export interface HandCardProps {
 
 export function HandCard({ instanceId, definition, index, count, selected, playable, disabled, drag, onStart, onInspect }: HandCardProps) {
   const group = useRef<THREE.Group>(null);
+  const hitArea = useRef<THREE.Mesh>(null);
+  const faceProbe = useMemo(() => new THREE.Mesh(new THREE.PlaneGeometry(1.56, 2.12), new THREE.MeshBasicMaterial({ side: THREE.DoubleSide })), []);
+  const faceOffset = useMemo(() => new THREE.Matrix4().makeTranslation(0, 0, .14), []);
   const targetPosition = useRef(new THREE.Vector3());
   const targetScale = useRef(new THREE.Vector3());
   const [hovered, setHovered] = useState(false);
   const center = index - (count - 1) / 2;
-  const spread = Math.min(1.2, 7.4 / Math.max(count - 1, 1));
+  const spread = Math.min(1.5, 7.4 / Math.max(count - 1, 1));
   const angle = center * Math.min(.065, .36 / Math.max(count - 1, 1));
+  useEffect(() => () => { faceProbe.geometry.dispose(); faceProbe.material.dispose(); }, [faceProbe]);
+  // Keep one event object while the pointer crosses artwork, text, gems, or
+  // the space occupied before lifting. Decorative meshes never own hover.
+  const raycast = useCallback((raycaster: THREE.Raycaster, intersections: THREE.Intersection[]) => {
+    if (!hitArea.current || !group.current) return;
+    const hits: THREE.Intersection[] = [];
+    THREE.Mesh.prototype.raycast.call(hitArea.current, raycaster, hits);
+    faceProbe.matrixWorld.copy(group.current.matrixWorld).multiply(faceOffset);
+    faceProbe.raycast(raycaster, hits);
+    const nearest = hits.sort((a, b) => a.distance - b.distance)[0];
+    if (nearest) intersections.push({ ...nearest, object: hitArea.current });
+  }, [faceProbe, faceOffset]);
   useFrame((_, delta) => {
     if (!group.current) return;
     const dragging = drag.current?.source.instanceId === instanceId && drag.current.moved;
@@ -79,21 +94,22 @@ export function HandCard({ instanceId, definition, index, count, selected, playa
     const scale = lifted || dragging ? 1.16 : 1;
     group.current.scale.lerp(targetScale.current.setScalar(scale), rate);
   });
-  return <group name={`hand-${instanceId}`}
-    onPointerDown={event => { if (!disabled) onStart(event, { type: 'card', instanceId }); else event.stopPropagation(); }}
-    onPointerOver={event => { event.stopPropagation(); setHovered(true); onInspect(definition.id); document.body.style.cursor = disabled ? 'default' : 'grab'; }}
-    onPointerOut={() => { setHovered(false); onInspect(null); document.body.style.cursor = 'default'; }}>
-    <mesh position={[center * spread, HAND_Y + index * .013, HAND_Z + Math.abs(center) ** 2 * .025]} rotation={[-1.07, 0, -angle]}>
-      <planeGeometry args={[1.36, 1.96]} /><meshBasicMaterial transparent opacity={0} depthWrite={false} />
+  return <group name={`hand-${instanceId}`}>
+    <mesh ref={hitArea} name={`hand-hit-${instanceId}`} raycast={raycast}
+      onPointerDown={event => { if (!disabled) onStart(event, { type: 'card', instanceId }); else event.stopPropagation(); }}
+      onPointerOver={event => { event.stopPropagation(); setHovered(true); onInspect(definition.id); document.body.style.cursor = disabled ? 'default' : 'grab'; }}
+      onPointerOut={() => { setHovered(false); onInspect(null); document.body.style.cursor = 'default'; }}
+      position={[center * spread, HAND_Y + index * .013, HAND_Z + Math.abs(center) ** 2 * .025]} rotation={[-1.07, 0, -angle]}>
+      <planeGeometry args={[1.56, 2.12]} /><meshBasicMaterial colorWrite={false} depthWrite={false} side={THREE.DoubleSide} />
     </mesh>
-    <group ref={group} position={[center * spread, HAND_Y, HAND_Z]} rotation={[-1.07, 0, -angle]}>
+    <group ref={group} position={[center * spread, HAND_Y + index * .013, HAND_Z + Math.abs(center) ** 2 * .025]} rotation={[-1.07, 0, -angle]}>
       <CardFace definition={definition} glowing={selected || (playable && !disabled)} />
     </group>
   </group>;
 }
 
-export function OpponentHand({ count }: { count: number }) {
-  return <group>{Array.from({ length: count }, (_, i) => {
+export function OpponentHand({ count, visibleCount = count }: { count: number; visibleCount?: number }) {
+  return <group>{Array.from({ length: visibleCount }, (_, i) => {
     const center = i - (count - 1) / 2;
     return <group key={i} position={[center * Math.min(.32, 2.8 / Math.max(1, count - 1)), .65 + i * .008, -4.28 + Math.abs(center) * .035]} rotation={[-Math.PI / 2, 0, Math.PI + center * .07]} scale={.53}><CardFace back /></group>;
   })}</group>;

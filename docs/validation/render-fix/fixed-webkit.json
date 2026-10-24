@@ -1,0 +1,243 @@
+{
+  "origin": "http://127.0.0.1:5173",
+  "engine": "webkit",
+  "createdAt": "2026-10-24T13:53:24.112Z",
+  "openingHand": [
+    "4Тролль техподдержки",
+    "2Дуэлянт с поварёшкой",
+    "4Рыцарь кастрюли",
+    "3Библиотекарь запретного отдела",
+    "0Счастливый жетон",
+    "3Страж калитки"
+  ],
+  "count": 6,
+  "inspectedIndex": 4,
+  "inspectedLabel": "Счастливый жетон",
+  "logBeforeHover": "Ваш ходПротивник: Оруженосец на полставкиХод противника",
+  "logAfterHover": "Ваш ходПротивник: Оруженосец на полставкиХод противника",
+  "steps": [
+    {
+      "name": "art",
+      "point": {
+        "x": 904.659970745961,
+        "y": 562.1408464686813
+      },
+      "startedAt": 1792849983361,
+      "endedAt": 1792849985364,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "name",
+      "point": {
+        "x": 905.2003261594701,
+        "y": 626.8762040793532
+      },
+      "startedAt": 1792849985366,
+      "endedAt": 1792849987321,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "description",
+      "point": {
+        "x": 905.0930345704876,
+        "y": 662.5721459551706
+      },
+      "startedAt": 1792849987322,
+      "endedAt": 1792849989284,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "cost",
+      "point": {
+        "x": 840.9553285719484,
+        "y": 515.9501923678076
+      },
+      "startedAt": 1792849989285,
+      "endedAt": 1792849991252,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "attack",
+      "point": {
+        "x": 844.8559642393132,
+        "y": 710.260397815843
+      },
+      "startedAt": 1792849991253,
+      "endedAt": 1792849993223,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "health",
+      "point": {
+        "x": 967.1081794726426,
+        "y": 710.260397815843
+      },
+      "startedAt": 1792849993224,
+      "endedAt": 1792849995197,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    },
+    {
+      "name": "frame",
+      "point": {
+        "x": 977.3711781736519,
+        "y": 597.9064169908602
+      },
+      "startedAt": 1792849995199,
+      "endedAt": 1792849997156,
+      "earlyLabel": "Счастливый жетон",
+      "lateLabel": "Счастливый жетон",
+      "expectedLabel": "Счастливый жетон",
+      "changes": []
+    }
+  ],
+  "dom": {
+    "changes": [
+      {
+        "time": 1792849982457,
+        "label": "Счастливый жетон"
+      },
+      {
+        "time": 1792849997165,
+        "label": ""
+      }
+    ],
+    "contextEvents": [],
+    "currentLabel": "",
+    "startedAt": 1792849972576
+  },
+  "pixelResults": [
+    {
+      "name": "first-active-hand",
+      "time": 1792849981747,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "settled-first-hand",
+      "time": 1792849982446,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-art-early",
+      "time": 1792849983618,
+      "darkFraction": 0,
+      "meanBrightness": 50.863474916722915
+    },
+    {
+      "name": "hover-art-late",
+      "time": 1792849985363,
+      "darkFraction": 0,
+      "meanBrightness": 50.863474916722915
+    },
+    {
+      "name": "hover-name-early",
+      "time": 1792849985817,
+      "darkFraction": 0,
+      "meanBrightness": 50.863474916722915
+    },
+    {
+      "name": "hover-name-late",
+      "time": 1792849987321,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-description-early",
+      "time": 1792849987769,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-description-late",
+      "time": 1792849989284,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-cost-early",
+      "time": 1792849989740,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-cost-late",
+      "time": 1792849991252,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-attack-early",
+      "time": 1792849991702,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-attack-late",
+      "time": 1792849993222,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-health-early",
+      "time": 1792849993669,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "hover-health-late",
+      "time": 1792849995197,
+      "darkFraction": 0,
+      "meanBrightness": 50.863474916722915
+    },
+    {
+      "name": "hover-frame-early",
+      "time": 1792849995652,
+      "darkFraction": 0,
+      "meanBrightness": 50.863474916722915
+    },
+    {
+      "name": "hover-frame-late",
+      "time": 1792849997156,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    },
+    {
+      "name": "after-first-turn-draw",
+      "time": 1792850002721,
+      "darkFraction": 0,
+      "meanBrightness": 50.863481040571635
+    }
+  ],
+  "blackFrames": [],
+  "diagnostics": {
+    "available": true,
+    "ready": true,
+    "actions": 7,
+    "renderer": "Apple GPU",
+    "initialSuspense": 1,
+    "runtimeSuspenseAfterReady": 0,
+    "contextLosses": 0,
+    "javascriptErrors": 0
+  },
+  "errors": [],
+  "failures": []
+}

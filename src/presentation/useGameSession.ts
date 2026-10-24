@@ -3,6 +3,7 @@ import { applyAction, createMatch, getLegalActions, getPlayerView } from '../cor
 import { chooseBotAction, chooseMulligan } from '../bot';
 import type { GameAction, GameEvent, GameState, HeroId } from '../core/types';
 import { describeEvent } from './events';
+import { recordDiagnostic } from '../diagnostics/runtime';
 
 export interface LogEntry { id: number; text: string }
 
@@ -38,6 +39,7 @@ export function useGameSession(sceneReady: boolean, paused: boolean) {
     stateRef.current = result.state;
     busyRef.current = true;
     const sequence = ++sequenceRef.current;
+    recordDiagnostic('action.committed', { sequence, action: action.type, player: action.playerId, turn: result.state.turn, events: result.events.map(event => event.type) });
     const needsUi = result.events.some((event) => event.type === 'mulligan' && event.playerId === 'player');
     completionRef.current = { sequence, scene: false, ui: !needsUi };
     setState(result.state);
@@ -58,6 +60,7 @@ export function useGameSession(sceneReady: boolean, paused: boolean) {
     epochRef.current += 1;
     const seed = crypto.getRandomValues(new Uint32Array(1))[0];
     const next = createMatch({ seed, heroId });
+    recordDiagnostic('match.start', { seed, heroId });
     stateRef.current = next;
     busyRef.current = true;
     const sequence = ++sequenceRef.current;
@@ -72,6 +75,7 @@ export function useGameSession(sceneReady: boolean, paused: boolean) {
   }, []);
 
   const reset = useCallback(() => {
+    recordDiagnostic('match.reset');
     epochRef.current += 1;
     stateRef.current = null;
     busyRef.current = false;

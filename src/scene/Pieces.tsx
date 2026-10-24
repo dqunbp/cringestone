@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, type MutableRefObject } from 'react';
-import { Text, useTexture } from '@react-three/drei';
+import { Text } from '@react-three/drei';
 import { useFrame, type ThreeEvent } from '@react-three/fiber';
 import { gsap } from 'gsap';
 import * as THREE from 'three';
@@ -8,7 +8,7 @@ import { StatGem } from './Card';
 import type { DragSource, DragState } from './interactions';
 import type { Position } from './spatial';
 import { prefersReducedMotion } from './motion';
-import { prepareArtTextures } from './textures';
+import { useArtTexture } from './SceneAssets';
 
 export type PieceRegistry = Map<string, THREE.Group>;
 
@@ -47,7 +47,7 @@ export interface MinionPieceProps {
 export function MinionPiece({ unit, definition, position, target, mine, active, selected, validTarget, busy, registry, onStart, onTarget, onInspect }: MinionPieceProps) {
   const layout = useRef<THREE.Group>(null);
   const actor = useRef<THREE.Group>(null);
-  const texture = useTexture(definition.art, prepareArtTextures);
+  const texture = useArtTexture(definition.art);
   useLayoutEffect(() => {
     if (actor.current) registry.set(unit.id, actor.current);
     return () => { registry.delete(unit.id); };
@@ -92,7 +92,7 @@ export interface HeroPieceProps {
 
 export function HeroPiece({ hero, health, position, target, active, validTarget, registry, onTarget, size = 1 }: HeroPieceProps) {
   const actor = useRef<THREE.Group>(null);
-  const texture = useTexture(hero.art, prepareArtTextures);
+  const texture = useArtTexture(hero.art);
   useLayoutEffect(() => {
     const key = `hero:${target.playerId}`;
     if (actor.current) registry.set(key, actor.current);
@@ -113,7 +113,7 @@ export function HeroPiece({ hero, health, position, target, active, validTarget,
 }
 
 export function DeckStack({ count, mine }: { count: number; mine: boolean }) {
-  const texture = useTexture('/assets/card-back.png', prepareArtTextures);
+  const texture = useArtTexture('/assets/card-back.png');
   const layers = Math.max(1, Math.ceil(count / 6));
   return <group position={[4.22, .44, mine ? 3.56 : -3.56]} rotation-y={mine ? -.08 : .08}>
     {Array.from({ length: layers }, (_, i) => <mesh key={i} position={[0, i * .027, 0]} castShadow><boxGeometry args={[.83, .025, 1.22]} /><meshStandardMaterial color={i % 2 ? '#baa274' : '#67513b'} roughness={.8} /></mesh>)}

@@ -115,22 +115,39 @@ function PlayedCard({ event, view }: { event: Extract<GameEvent, { type: 'cardPl
   return <group ref={group} position={[0, 1, mine ? 3.7 : -3.7]} rotation={[-1.05, 0, 0]} scale={.7}><CardFace definition={definition} /></group>;
 }
 
-function DrawnCard({ event, view }: { event: Extract<GameEvent, { type: 'cardDrawn' | 'cardBurned' }>; view: PlayerView }) {
+function handPose(index: number, count: number, mine: boolean) {
+  const center = index - (count - 1) / 2;
+  const spread = mine ? Math.min(1.5, 7.4 / Math.max(count - 1, 1)) : Math.min(.32, 2.8 / Math.max(count - 1, 1));
+  const position: Position = [center * spread, mine ? HAND_Y + index * .013 : .65 + index * .008, mine ? HAND_Z + Math.abs(center) ** 2 * .025 : -4.28 + Math.abs(center) * .035];
+  const rotation: Position = [mine ? -1.07 : -Math.PI / 2, 0, mine ? -center * Math.min(.065, .36 / Math.max(count - 1, 1)) : Math.PI + center * .07];
+  return { position, rotation, scale: mine ? 1 : .53 };
+}
+
+function DrawnCard({ event, view, drawIndex, drawCount }: { event: Extract<GameEvent, { type: 'cardDrawn' | 'cardBurned' }>; view: PlayerView; drawIndex: number; drawCount: number }) {
   const batch = useBatch();
   const group = useRef<THREE.Group>(null);
   const mine = event.playerId === view.selfId;
   const burned = event.type === 'cardBurned';
   const reduced = prefersReducedMotion();
+  const count = mine ? view.self.hand.length : view.opponent.handCount;
+  const index = mine ? view.self.hand.findIndex(card => card.id === event.card.id) : count - drawCount + drawIndex;
+  const pose = handPose(Math.max(0, index), count, mine);
   useLayoutEffect(() => {
     if (!group.current) return;
     const complete = batch.hold();
     const timeline = gsap.timeline({ onComplete: complete });
-    timeline.to(group.current.position, { x: burned ? 2.6 : mine ? 1.4 : 0, y: burned ? 1.8 : 1.15, z: burned ? (mine ? 2.4 : -2.4) : mine ? 4.25 : -4.25, duration: reduced ? 0 : .5, ease: 'power2.inOut' }, .08);
-    timeline.to(group.current.scale, { x: 0, y: 0, z: 0, duration: reduced ? 0 : burned ? .3 : .13 }, burned ? .8 : .55);
+    const delay = .08 + drawIndex * .12;
+    const duration = reduced ? 0 : .5;
+    timeline.to(group.current.position, { x: burned ? 2.6 : pose.position[0], y: burned ? 1.8 : pose.position[1], z: burned ? (mine ? 2.4 : -2.4) : pose.position[2], duration, ease: 'power2.inOut' }, delay);
+    if (burned) timeline.to(group.current.scale, { x: 0, y: 0, z: 0, duration: reduced ? 0 : .3 }, .8);
+    else {
+      timeline.to(group.current.rotation, { x: pose.rotation[0], y: pose.rotation[1], z: pose.rotation[2], duration, ease: 'power2.inOut' }, delay);
+      timeline.to(group.current.scale, { x: pose.scale, y: pose.scale, z: pose.scale, duration, ease: 'power2.inOut' }, delay);
+    }
     return () => { timeline.kill(); complete(); };
   }, [batch]);
   return <>
-    <group ref={group} position={[4.22, .8, mine ? 3.56 : -3.56]} rotation={[-1.1, 0, .15]} scale={burned ? .86 : .58}><CardFace definition={burned ? CARDS[event.card.cardId] : undefined} back={!burned} /></group>
+    <group name={`drawn-card-${event.card.id}`} ref={group} position={[4.22, .8, mine ? 3.56 : -3.56]} rotation={[-1.1, 0, .15]} scale={burned ? .86 : .58}><CardFace definition={mine || burned ? CARDS[event.card.cardId] : undefined} back={!mine && !burned} /></group>
     {burned && !reduced && <Burst position={[2.6, 1.6, mine ? 2.4 : -2.4]} color="#ff9d56" delay={.45} />}
   </>;
 }
@@ -139,8 +156,7 @@ function DealtCard({ view, index, mine }: { view: PlayerView; index: number; min
   const batch = useBatch();
   const group = useRef<THREE.Group>(null);
   const count = mine ? view.self.hand.length : view.opponent.handCount;
-  const center = index - (count - 1) / 2;
-  const spread = mine ? Math.min(1.2, 7.4 / Math.max(count - 1, 1)) : Math.min(.32, 2.8 / Math.max(count - 1, 1));
+  const pose = handPose(index, count, mine);
   useLayoutEffect(() => {
     if (!group.current) return;
     const complete = batch.hold();
@@ -148,12 +164,12 @@ function DealtCard({ view, index, mine }: { view: PlayerView; index: number; min
     const delay = .16 + index * .12 + (mine ? 0 : .07);
     const duration = prefersReducedMotion() ? 0 : .55;
     timeline.set(group.current, { visible: true }, delay);
-    timeline.to(group.current.position, { x: center * spread, y: mine ? HAND_Y + index * .013 : .65 + index * .008, z: mine ? HAND_Z + Math.abs(center) ** 2 * .025 : -4.28 + Math.abs(center) * .035, duration, ease: 'power2.out' }, delay);
-    timeline.to(group.current.rotation, { x: mine ? -1.07 : -Math.PI / 2, z: mine ? -center * Math.min(.065, .36 / Math.max(count - 1, 1)) : Math.PI + center * .07, duration, ease: 'power2.out' }, delay);
-    timeline.to(group.current.scale, { x: mine ? 1 : .53, y: mine ? 1 : .53, z: mine ? 1 : .53, duration, ease: 'power2.out' }, delay);
+    timeline.to(group.current.position, { x: pose.position[0], y: pose.position[1], z: pose.position[2], duration, ease: 'power2.out' }, delay);
+    timeline.to(group.current.rotation, { x: pose.rotation[0], y: pose.rotation[1], z: pose.rotation[2], duration, ease: 'power2.out' }, delay);
+    timeline.to(group.current.scale, { x: pose.scale, y: pose.scale, z: pose.scale, duration, ease: 'power2.out' }, delay);
     return () => { timeline.kill(); complete(); };
   }, [batch]);
-  return <group ref={group} visible={false} position={[4.22, .8, mine ? 3.56 : -3.56]} rotation={[-Math.PI / 2, 0, -.12]} scale={.58}>
+  return <group name={`dealt-card-${mine ? view.self.hand[index].id : `opponent-${index}`}`} ref={group} visible={false} position={[4.22, .8, mine ? 3.56 : -3.56]} rotation={[-Math.PI / 2, 0, -.12]} scale={.58}>
     <CardFace definition={mine ? CARDS[view.self.hand[index].cardId] : undefined} back={!mine} />
   </group>;
 }
@@ -165,18 +181,21 @@ function InitialDeal({ view }: { view: PlayerView }) {
   </group>;
 }
 
-export function BattleEffects({ events, view, sequence }: { events: GameEvent[]; view: PlayerView; sequence: number }) {
+export function BattleEffects({ events, view, sequence, handMotionsActive }: { events: GameEvent[]; view: PlayerView; sequence: number; handMotionsActive: boolean }) {
   const reduced = prefersReducedMotion();
+  const initialDeal = view.phase === 'playing' && events.some(event => event.type === 'matchStart');
   return <group key={sequence}>{events.flatMap((event, index) => {
     const key = `${sequence}:${index}`;
-    if (event.type === 'matchStart') return [<InitialDeal key={key} view={view} />];
+    // The DOM owns mulligan dealing. At the first turn, one full hand flight
+    // includes the coin and opening draw: neither gets a second DrawnCard.
+    if (event.type === 'matchStart') return handMotionsActive && initialDeal ? [<InitialDeal key={key} view={view} />] : [];
     if (event.type === 'damage' || event.type === 'heal' || event.type === 'buff') {
       const pos = targetPosition(view, event.target);
       const heal = event.type !== 'damage';
       const value = event.type === 'buff' ? `+${event.attack}/+${event.health}` : `${heal ? '+' : '−'}${event.amount}`;
       return [!reduced && <Burst key={`${key}b`} position={pos} color={heal ? '#a7e1b2' : '#ffc47c'} gentle={heal} />, <FloatingNumber key={`${key}n`} position={pos} value={value} color={heal ? '#c2f2c8' : '#ffe0ab'} />];
     }
-    if (reduced && event.type !== 'cardBurned') return [];
+    if (reduced && event.type !== 'cardBurned' && event.type !== 'cardDrawn') return [];
     if (event.type === 'summon') {
       const mine = event.playerId === view.selfId;
       const board = mine ? view.self.board : view.opponent.board;
@@ -184,7 +203,12 @@ export function BattleEffects({ events, view, sequence }: { events: GameEvent[];
     }
     if (event.type === 'heroPower' || event.type === 'turnStart') return [<Burst key={key} position={heroPosition(event.playerId === view.selfId)} color={event.type === 'heroPower' ? '#c9a8f2' : '#ead39b'} delay={.04} gentle />, event.type === 'heroPower' && event.target ? <SpellProjectile key={`${key}p`} from={heroPosition(event.playerId === view.selfId)} to={targetPosition(view, event.target)} color="#c9a8f2" /> : null];
     if (event.type === 'cardPlayed') return [<PlayedCard key={key} event={event} view={view} />, event.target && CARDS[event.card.cardId].effect?.type === 'damage' ? <SpellProjectile key={`${key}p`} from={heroPosition(event.playerId === view.selfId)} to={targetPosition(view, event.target)} color={event.card.cardId === 'spark' ? '#a7caff' : '#ffbd72'} /> : null];
-    if (event.type === 'cardDrawn' || event.type === 'cardBurned') return [<DrawnCard key={key} event={event} view={view} />];
+    if (event.type === 'cardDrawn' || event.type === 'cardBurned') {
+      if (!handMotionsActive || initialDeal && event.type === 'cardDrawn') return [];
+      const draws = events.filter(candidate => candidate.type === 'cardDrawn' && candidate.playerId === event.playerId);
+      const drawIndex = event.type === 'cardDrawn' ? draws.indexOf(event) : 0;
+      return [<DrawnCard key={key} event={event} view={view} drawIndex={drawIndex} drawCount={draws.length} />];
+    }
     return [];
   })}</group>;
 }

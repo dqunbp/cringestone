@@ -135,7 +135,7 @@ export async function screenPoint(page: Page, point: [number, number, number]) {
 
 export async function handPoint(page: Page, index: number, count: number) {
   const center = index - (count - 1) / 2;
-  const spread = Math.min(1.2, 7.4 / Math.max(count - 1, 1));
+  const spread = Math.min(1.5, 7.4 / Math.max(count - 1, 1));
   return screenPoint(page, [center * spread, .8 + index * .013, 4.5 + Math.abs(center) ** 2 * .025]);
 }
 
