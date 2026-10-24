@@ -1,0 +1,214 @@
+{
+  "generatedAt": "2026-10-23",
+  "provider": "ChatGPT browser, cringestone assets project",
+  "images": [
+    {
+      "path": "public/assets/board/tavern.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2874078,
+      "sha256": "b990416bf71903d8e0a52902668200cd0d24c2e28f40d40220c60efb883f255f",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adba937-b7e0-83ed-938b-5e451aab23fb"
+    },
+    {
+      "path": "public/assets/card-back.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 3176787,
+      "sha256": "40961a69f3f91a3ca7de272d36fd4294ddae71bc4edc6dfb57f347b7fa310a74",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adba937-b7e0-83ed-938b-5e451aab23fb"
+    },
+    {
+      "path": "public/assets/cards/apprentice.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2516300,
+      "sha256": "1837e3655fbc699eb89e9f2f52e91a7e3ec371ea7f8af95eac463300a0ca58d3",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaadc-317c-83eb-8523-090bfa1ec64d"
+    },
+    {
+      "path": "public/assets/cards/chief.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2545406,
+      "sha256": "e25402f4f0aa75c183ffc7cbb47e98c58ea88727b92bf69db00e664aec5797ef",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae1-30fc-83ed-b2db-ef4f1220a321"
+    },
+    {
+      "path": "public/assets/cards/coin.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2736156,
+      "sha256": "c6f752cb14f6a5e76fac4b3efb19382403fe059dfdaf19aa60fd04952ee35a76",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae5-c458-83ed-9945-8dfb11dee74a"
+    },
+    {
+      "path": "public/assets/cards/dragon.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2735487,
+      "sha256": "31cb36908ccdd4d2e663d633e840f539d09de3c65fbf016c68173a519c2ddf50",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae5-c458-83ed-9945-8dfb11dee74a"
+    },
+    {
+      "path": "public/assets/cards/duelist.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2671206,
+      "sha256": "7e9167e176ec0b55b8e19c8a69a4e5690e0b87f602333039bfc0cccff11e5b7c",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaa7b-ad3c-83eb-a0c4-390c8608d207"
+    },
+    {
+      "path": "public/assets/cards/fireball.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2541928,
+      "sha256": "51c724c338f5f9ea00e96e1ee5c23439b2ebf52a83bde4533b5c2b93d544dd06",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaadc-317c-83eb-8523-090bfa1ec64d"
+    },
+    {
+      "path": "public/assets/cards/foreman.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2706695,
+      "sha256": "87368832c40f2da27b4f7b7160542bb681148787bdb37a2f26bd86d7d68d039d",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae1-30fc-83ed-b2db-ef4f1220a321"
+    },
+    {
+      "path": "public/assets/cards/guard.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2964475,
+      "sha256": "8b64f630999fab4c325fb6051cc24416e0f7e7d8ba9e09a4e897baf74e58d196",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae5-c458-83ed-9945-8dfb11dee74a"
+    },
+    {
+      "path": "public/assets/cards/insight.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2660509,
+      "sha256": "9ce2786c0bbb392494920dcb9cd262762c8a2cc7706c06f9f34eebd48df954a0",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaadc-317c-83eb-8523-090bfa1ec64d"
+    },
+    {
+      "path": "public/assets/cards/intern.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2648495,
+      "sha256": "61d13d5ae7dafb32e40b0e067a1395807cd0013bbe66e47eb3468d42150c130d",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae5-c458-83ed-9945-8dfb11dee74a"
+    },
+    {
+      "path": "public/assets/cards/librarian.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2666345,
+      "sha256": "abbcfaaea20505202b0902e64101f5638d349f4ab9f5940bb106a067db2bcb27",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adba937-b7e0-83ed-938b-5e451aab23fb"
+    },
+    {
+      "path": "public/assets/cards/mushroom.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2892654,
+      "sha256": "d780ff25317ad36ce9270d68a9602b26b90961afc9b9749f19581247b44ecc4e",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaa7b-ad3c-83eb-a0c4-390c8608d207"
+    },
+    {
+      "path": "public/assets/cards/ogre.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2612745,
+      "sha256": "f2ac2de113ceede7ab45d697437a7aa3a89fb519a6b13907809352597515aeb0",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaa7b-ad3c-83eb-a0c4-390c8608d207"
+    },
+    {
+      "path": "public/assets/cards/promotion.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2684738,
+      "sha256": "5efc98c1ccc1e5a41ebdb9403620dbdd60fd30c6fd6afd90d9bc1fccb7807893",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae1-30fc-83ed-b2db-ef4f1220a321"
+    },
+    {
+      "path": "public/assets/cards/recruits.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2775584,
+      "sha256": "c4f6c5696eaabdb08d963fd03240c66ac284bdbf7da918bbd756eda14c8f8a89",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae1-30fc-83ed-b2db-ef4f1220a321"
+    },
+    {
+      "path": "public/assets/cards/sentinel.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2784668,
+      "sha256": "31928114f82df29018e5ea24b1ccbe5670092ac9b95f2a83663b8288b1880d67",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae5-c458-83ed-9945-8dfb11dee74a"
+    },
+    {
+      "path": "public/assets/cards/soup.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2584559,
+      "sha256": "e1ba468b5687e0f01920dd89cffba7a9cdc84c1bf4ec37abcef79f180ec8e8ea",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaae1-30fc-83ed-b2db-ef4f1220a321"
+    },
+    {
+      "path": "public/assets/cards/spark.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2409932,
+      "sha256": "0cd91235f3d1531302569c1282bf27c2533545176572f262c5a24bb9c79a4732",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaadc-317c-83eb-8523-090bfa1ec64d"
+    },
+    {
+      "path": "public/assets/cards/squire.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2896440,
+      "sha256": "69c29a45e8dd5f229b516875dc328b7c18a971d4e1374e24d9baa7222b75731c",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaa7b-ad3c-83eb-a0c4-390c8608d207"
+    },
+    {
+      "path": "public/assets/cards/storm.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2858902,
+      "sha256": "81c36b11fa63541b064e5037fee52dc4e89ec17b27f37fcd634a9df4f420be0b",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaadc-317c-83eb-8523-090bfa1ec64d"
+    },
+    {
+      "path": "public/assets/cards/troll.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2811345,
+      "sha256": "2855931ae358d564997ac1aef31075d686441fd8744fdfeaf2199e2c917c1b6e",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaa7b-ad3c-83eb-a0c4-390c8608d207"
+    },
+    {
+      "path": "public/assets/cards/turtle.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2862098,
+      "sha256": "68ad32b69879d23547f9b9bd93e454c44dbc1d8ce8c44c98ea4e70c14d955766",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adbaa7b-ad3c-83eb-a0c4-390c8608d207"
+    },
+    {
+      "path": "public/assets/heroes/goblin.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2573195,
+      "sha256": "5b5270bf4aa42f06108f47850545ef813470621829059843218e231b7f594454",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adba937-b7e0-83ed-938b-5e451aab23fb"
+    },
+    {
+      "path": "public/assets/heroes/mage.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2743166,
+      "sha256": "b5e81935bfb45bdc5d071dc8312494af91edd0dd27e5700ceea8d2f63ce0b511",
+      "source": "https://chatgpt.com/g/g-p-6adba12d21508191ba18efb4de5719b5-cringestone-assets/c/6adba937-b7e0-83ed-938b-5e451aab23fb"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "measuredAt": "2026-10-23T19:08:54.867Z",
+  "note": "rAF cadence in a full-board scene; not a universal device guarantee. Harness is not imported by production.",
+  "results": [
+    {
+      "name": "1440x900-idle",
+      "headed": true,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "effects": false,
+      "frames": 475,
+      "elapsedMs": 4000.0999999999995,
+      "averageFps": 118.7470313242169,
+      "medianFrameMs": 8.300000000000182,
+      "p95FrameMs": 9.300000000000182,
+      "p99FrameMs": 9.399999999999636,
+      "framesOver33ms": 1,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "drawingBuffer": [
+        2160,
+        1350
+      ],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "animationCompletions": 1,
+      "errors": []
+    },
+    {
+      "name": "1440x900-effects",
+      "headed": true,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "effects": true,
+      "frames": 455,
+      "elapsedMs": 4032.199999999999,
+      "averageFps": 112.84162491939887,
+      "medianFrameMs": 8.300000000001091,
+      "p95FrameMs": 9.399999999999636,
+      "p99FrameMs": 32.399999999999636,
+      "framesOver33ms": 4,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "drawingBuffer": [
+        2160,
+        1350
+      ],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "animationCompletions": 4,
+      "errors": []
+    },
+    {
+      "name": "1920x1080-idle",
+      "headed": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "deviceScaleFactor": 2,
+      "effects": false,
+      "frames": 480,
+      "elapsedMs": 4000.7999999999993,
+      "averageFps": 119.97600479904023,
+      "medianFrameMs": 8.300000000000182,
+      "p95FrameMs": 9.299999999999272,
+      "p99FrameMs": 9.300000000001091,
+      "framesOver33ms": 0,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "drawingBuffer": [
+        2880,
+        1620
+      ],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "animationCompletions": 1,
+      "errors": []
+    },
+    {
+      "name": "1920x1080-effects",
+      "headed": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "deviceScaleFactor": 2,
+      "effects": true,
+      "frames": 454,
+      "elapsedMs": 4024.6000000000004,
+      "averageFps": 112.80624161407343,
+      "medianFrameMs": 8.300000000001091,
+      "p95FrameMs": 9.299999999999272,
+      "p99FrameMs": 33.399999999999636,
+      "framesOver33ms": 3,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "drawingBuffer": [
+        2880,
+        1620
+      ],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "animationCompletions": 4,
+      "errors": []
+    }
+  ]
+}
