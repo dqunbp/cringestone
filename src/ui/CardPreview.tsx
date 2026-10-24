@@ -1,10 +1,11 @@
+import { assetUrl } from '../presentation/assetUrl';
 import { CARDS } from '../core';
 import type { CardDefinition } from '../core/types';
 
 export function IllustratedCard({ card, compact = false }: { card: CardDefinition; compact?: boolean }) {
   return <article className={`illustrated-card ${card.type} ${compact ? 'compact-card' : ''}`}>
     <div className="card-cost" aria-label={`Стоимость: ${card.cost}`}>{card.cost}</div>
-    <div className="card-art"><img src={card.art} alt="" draggable={false} /></div>
+    <div className="card-art"><img src={assetUrl(card.art)} alt="" draggable={false} /></div>
     <div className="card-paper">
       <h3>{card.name}</h3>
       <span className="card-kind">{card.type === 'minion' ? 'Существо' : 'Заклинание'}</span>

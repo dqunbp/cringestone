@@ -1,3 +1,4 @@
+import { assetUrl } from '../presentation/assetUrl';
 import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { RoundedBox, Text } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
@@ -123,7 +124,7 @@ export function Arena() {
       <mesh rotation={[.2, .5, .2]} castShadow><octahedronGeometry args={[.25, 0]} /><meshStandardMaterial color={side < 0 ? '#80b6bf' : '#ad98d4'} emissive={side < 0 ? '#3b94a5' : '#7861b0'} emissiveIntensity={.35} roughness={.21} metalness={.35} /></mesh>
       <mesh position={[.27, -.1, .24]} rotation={[.4, .2, .7]}><octahedronGeometry args={[.12, 0]} /><meshStandardMaterial color="#c9b16e" roughness={.3} metalness={.5} /></mesh>
     </group>)}
-    <Text position={[0, .34, -4.65]} rotation={[-Math.PI / 2, 0, 0]} font="/assets/fonts/heading.ttf" fontSize={.29} letterSpacing={.16} color="#b19563" anchorX="center" anchorY="middle">CRINGESTONE</Text>
+    <Text position={[0, .34, -4.65]} rotation={[-Math.PI / 2, 0, 0]} font={assetUrl('/assets/fonts/heading.ttf')} fontSize={.29} letterSpacing={.16} color="#b19563" anchorX="center" anchorY="middle">CRINGESTONE</Text>
     <Motes />
     </group>
   </>;

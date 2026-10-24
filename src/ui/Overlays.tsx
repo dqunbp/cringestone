@@ -1,3 +1,4 @@
+import { assetUrl } from '../presentation/assetUrl';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import { CARDS, DECKS, HEROES } from '../core';
@@ -105,7 +106,7 @@ export function Mulligan({ view, selected, setSelected, confirm, busy, eventSequ
 export function Result({ view, replay, menu }: { view: PlayerView; replay: () => void; menu: () => void }) {
   const win = view.winner === 'player';
   return <div className={`result-overlay ${win ? 'victory' : ''}`} role="dialog" aria-modal="true" aria-label="Результат партии">
-    <div className="result-medallion"><img src={HEROES[win ? view.self.heroId : view.opponent.heroId].art} alt="" /></div>
+    <div className="result-medallion"><img src={assetUrl(HEROES[win ? view.self.heroId : view.opponent.heroId].art)} alt="" /></div>
     <span className="ornament">✦</span><h2>{view.winner === 'draw' ? 'Боевая ничья' : win ? 'Славная победа!' : 'Бывает и такое'}</h2>
     <p>{view.winner === 'draw' ? 'Оба героя выложились до последнего.' : win ? 'За этот стол вас ещё долго будут вспоминать.' : 'Сопернику повезло. Есть время проверить ещё раз.'}</p>
     <div className="result-actions"><button className="brass-button" onClick={replay}>Ещё партию</button><button className="quiet-button" onClick={menu}>Выбрать героя</button></div>

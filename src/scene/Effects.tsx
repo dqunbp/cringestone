@@ -1,3 +1,4 @@
+import { assetUrl } from '../presentation/assetUrl';
 import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { Billboard, Text } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
@@ -59,7 +60,7 @@ function FloatingNumber({ position, value, color }: { position: Position; value:
     return () => { timeline.kill(); complete(); };
   }, [batch]);
   return <group ref={group} position={[position[0], position[1] + .55, position[2]]} scale={0}>
-    <Billboard><Text font="/assets/fonts/heading.ttf" fontSize={.57} color={color} outlineColor="#2b1b1c" outlineWidth={.028} anchorX="center" anchorY="middle">{value}</Text></Billboard>
+    <Billboard><Text font={assetUrl('/assets/fonts/heading.ttf')} fontSize={.57} color={color} outlineColor="#2b1b1c" outlineWidth={.028} anchorX="center" anchorY="middle">{value}</Text></Billboard>
   </group>;
 }
 

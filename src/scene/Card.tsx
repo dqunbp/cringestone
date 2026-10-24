@@ -1,3 +1,4 @@
+import { assetUrl } from '../presentation/assetUrl';
 import { useCallback, useEffect, useMemo, useRef, useState, type MutableRefObject } from 'react';
 import { Text } from '@react-three/drei';
 import { useFrame, type ThreeEvent } from '@react-three/fiber';
@@ -9,8 +10,8 @@ import { useArtTexture } from './SceneAssets';
 import { RoundedPlate } from './RoundedPlate';
 import { HAND_Y, HAND_Z } from './spatial';
 
-const heading = '/assets/fonts/heading.ttf';
-const body = '/assets/fonts/body.ttf';
+const heading = assetUrl('/assets/fonts/heading.ttf');
+const body = assetUrl('/assets/fonts/body.ttf');
 
 export function StatGem({ value, position, color = '#a73c36', size = .18 }: { value: number | string; position: [number, number, number]; color?: string; size?: number }) {
   return <group position={position}>

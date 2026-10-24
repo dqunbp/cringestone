@@ -1,3 +1,4 @@
+import { assetUrl } from '../presentation/assetUrl';
 import { createContext, useContext, useEffect, useMemo, type ReactNode } from 'react';
 import { Text, useTexture } from '@react-three/drei';
 import type { Texture } from 'three';
@@ -6,13 +7,13 @@ import { recordDiagnostic } from '../diagnostics/runtime';
 import { prepareArtTextures } from './textures';
 
 const ART_URLS = [...new Set([...Object.values(CARDS).map(card => card.art), ...Object.values(HEROES).map(hero => hero.art), '/assets/card-back.png'])];
-const FONTS = ['/assets/fonts/heading.ttf', '/assets/fonts/body.ttf'];
+const FONTS = ['/assets/fonts/heading.ttf', '/assets/fonts/body.ttf'].map(assetUrl);
 const GLYPHS = '0123456789−+!?.,:–—«»ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя';
 const ArtContext = createContext<ReadonlyMap<string, Texture> | null>(null);
 
 /** One loading boundary owns all scene art; consumers never start a second loader. */
 export function SceneAssets({ children }: { children: ReactNode }) {
-  const textures = useTexture(ART_URLS, prepareArtTextures);
+  const textures = useTexture(ART_URLS.map(assetUrl), prepareArtTextures);
   const art = useMemo(() => new Map(ART_URLS.map((url, index) => [url, textures[index]])), [textures]);
   useEffect(() => { recordDiagnostic('scene.assets.ready', { images: ART_URLS.length, fonts: FONTS.length }); }, []);
   return <ArtContext.Provider value={art}>

@@ -59,3 +59,9 @@ npm run preview
 Подробнее: [архитектура](docs/architecture.md), [ассеты и промпты](docs/assets/prompts.md), [проверка версии](docs/validation.md). Метаданные и SHA-256 всех 26 изображений находятся в `docs/assets/manifest.json`.
 
 Стек: TypeScript strict, React 19, Three.js WebGL2, React Three Fiber 9, Drei 10, GSAP, Vite, Vitest и Playwright. Сервер, аккаунты, мультиплеер, редактор колод и пользовательские наборы карт отложены; ядро не зависит от браузера и может быть использовано будущей серверной сессией.
+
+## Публикация
+
+Игра: https://dqunbp.github.io/cringestone/
+
+Push в `main` запускает тесты, сборку и публикацию GitHub Pages через Actions. Для локальной проверки этой сборки: `GITHUB_PAGES=true npm run build`, затем `GITHUB_PAGES=true npm run preview` и открыть `/cringestone/`.

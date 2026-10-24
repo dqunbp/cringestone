@@ -1,3 +1,4 @@
+import { assetUrl } from '../presentation/assetUrl';
 import { useLayoutEffect, useRef, type MutableRefObject } from 'react';
 import { Text } from '@react-three/drei';
 import { useFrame, type ThreeEvent } from '@react-three/fiber';
@@ -71,7 +72,7 @@ export function MinionPiece({ unit, definition, position, target, mine, active, 
         <group scale={[1, 1.13, 1]}><SelectionRing radius={.61} color={validTarget ? '#efbf76' : '#8ec7a2'} enabled={validTarget || selected || (mine && active && unit.canAttack && !busy)} /></group>
         <StatGem value={unit.attack} position={[-.44, -.49, .16]} color={unit.attack > (definition.attack ?? 0) ? '#63845b' : '#8f6b2a'} size={.195} />
         <StatGem value={unit.health} position={[.44, -.49, .16]} color={unit.health < unit.maxHealth ? '#b43e35' : '#863d37'} size={.195} />
-        {!unit.canAttack && mine && <Text position={[.4, .5, .15]} font="/assets/fonts/heading.ttf" fontSize={.16} color="#d3ceaf" outlineWidth={.007} outlineColor="#2a332d">z</Text>}
+        {!unit.canAttack && mine && <Text position={[.4, .5, .15]} font={assetUrl('/assets/fonts/heading.ttf')} fontSize={.16} color="#d3ceaf" outlineWidth={.007} outlineColor="#2a332d">z</Text>}
         {definition.taunt && <mesh position={[0, .65, .11]} rotation-z={Math.PI / 4}><ringGeometry args={[.08, .115, 4]} /><meshStandardMaterial color="#e4e0bd" metalness={.7} roughness={.35} /></mesh>}
       </group>
     </group>
@@ -106,7 +107,7 @@ export function HeroPiece({ hero, health, position, target, active, validTarget,
       <mesh position-z={.1}><torusGeometry args={[.91, .018, 6, 48]} /><meshStandardMaterial color="#c9a96f" metalness={.8} roughness={.25} /></mesh>
       <SelectionRing radius={.97} color={validTarget ? '#f4bd74' : '#a4bd8c'} enabled={validTarget || active} />
       <StatGem value={health} position={[.68, -.56, .18]} size={.24} />
-      <Text position={[0, -.98, .13]} font="/assets/fonts/heading.ttf" fontSize={.16} color="#e1c998" outlineWidth={.007} outlineColor="#322820" anchorX="center">{hero.name}</Text>
+      <Text position={[0, -.98, .13]} font={assetUrl('/assets/fonts/heading.ttf')} fontSize={.16} color="#e1c998" outlineWidth={.007} outlineColor="#322820" anchorX="center">{hero.name}</Text>
       {[0, 1, 2].map(i => <mesh key={i} position={[(i - 1) * .19, .85 + (i === 1 ? .08 : 0), .1]} rotation-z={Math.PI / 4}><boxGeometry args={[.14, .14, .1]} /><meshStandardMaterial color={hero.color} metalness={.6} roughness={.4} /></mesh>)}
     </group>
   </group>;
@@ -118,6 +119,6 @@ export function DeckStack({ count, mine }: { count: number; mine: boolean }) {
   return <group position={[4.22, .44, mine ? 3.56 : -3.56]} rotation-y={mine ? -.08 : .08}>
     {Array.from({ length: layers }, (_, i) => <mesh key={i} position={[0, i * .027, 0]} castShadow><boxGeometry args={[.83, .025, 1.22]} /><meshStandardMaterial color={i % 2 ? '#baa274' : '#67513b'} roughness={.8} /></mesh>)}
     <mesh position-y={layers * .027} rotation-x={-Math.PI / 2}><planeGeometry args={[.83, 1.22]} /><meshBasicMaterial map={texture} toneMapped={false} /></mesh>
-    <Text position={[0, layers * .027 + .02, .85]} rotation={[-Math.PI / 2, 0, 0]} font="/assets/fonts/heading.ttf" fontSize={.18} color="#d9bd86">{count}</Text>
+    <Text position={[0, layers * .027 + .02, .85]} rotation={[-Math.PI / 2, 0, 0]} font={assetUrl('/assets/fonts/heading.ttf')} fontSize={.18} color="#d9bd86">{count}</Text>
   </group>;
 }

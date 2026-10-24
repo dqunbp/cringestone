@@ -1,3 +1,4 @@
+import { assetUrl } from '../presentation/assetUrl';
 import { HEROES } from '../core';
 import type { HeroId } from '../core/types';
 
@@ -9,7 +10,7 @@ export function MainMenu({ heroId, select, start, deck, rules, soundEnabled, tog
       <header className="game-title"><span className="title-star">✦</span><h1>КРИНЖСТОУН</h1><p>Большие амбиции. Маленькая таверна.</p></header>
       <div className="hero-choices" role="group" aria-label="Выберите героя">
         {(Object.keys(HEROES) as HeroId[]).map((id) => { const hero = HEROES[id]; return <button key={id} className={`hero-choice ${heroId === id ? 'chosen' : ''} hero-${id}`} aria-pressed={heroId === id} onClick={() => select(id)}>
-          <img src={hero.art} alt="" className="hero-portrait" draggable={false} /><span className="hero-vignette" />
+          <img src={assetUrl(hero.art)} alt="" className="hero-portrait" draggable={false} /><span className="hero-vignette" />
           <span className="hero-choice-copy"><span className="hero-title">{hero.title}</span><strong>{hero.name}</strong><span className="hero-description">{hero.description}</span></span>
           <span className="chosen-mark" aria-hidden="true">{heroId === id ? '✦' : '◇'}</span>
         </button>; })}
